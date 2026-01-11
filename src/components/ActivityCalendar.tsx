@@ -455,8 +455,6 @@ export const ActivityCalendar = forwardRef<HTMLElement, Props>(
       >
         <div className={getClassName('scroll-container')} style={styles.scrollContainer(fontSize)}>
           <svg
-            width={width}
-            height={height}
             viewBox={`0 0 ${width} ${height}`}
             className={getClassName('calendar')}
             style={{ ...styles.calendar, marginLeft: weekdayLabelOffset }}

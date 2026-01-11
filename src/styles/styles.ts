@@ -4,7 +4,7 @@ import type { ColorScheme } from '../types'
 export const styles = {
   container: (fontSize: number) =>
     ({
-      width: 'max-content', // Calendar should not grow
+      width: '100%', // Allow calendar to be responsive
       maxWidth: '100%', // Do not remove - parent might be a flexbox
       display: 'flex',
       flexDirection: 'column',
@@ -21,6 +21,8 @@ export const styles = {
   calendar: {
     display: 'block', // SVGs are inline-block by default
     overflow: 'visible', // Weekday labels are rendered left of the container
+    width: '100%',
+    height: 'auto',
   } satisfies CSSProperties,
   rect: (colorScheme: ColorScheme) =>
     ({
